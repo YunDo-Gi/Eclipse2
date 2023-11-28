@@ -639,6 +639,7 @@ namespace UnityEngine.EventSystems
             leftData.Reset();
 
             //Now set the world space ray. This ray is what the user uses to point at UI elements
+            // rayTransform.position = new Vector3(rayTransform.position.x, rayTransform.position.y - 0.1f, rayTransform.position.z); // Add
             leftData.worldSpaceRay = new Ray(rayTransform.position, rayTransform.forward);
             leftData.scrollDelta = GetExtraScrollDelta();
 
