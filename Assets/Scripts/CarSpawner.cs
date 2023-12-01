@@ -106,7 +106,7 @@ public class CarSpawner : MonoBehaviour
                     {
                         if (carRigidbody.velocity.magnitude > 0.5f)
                         {
-                            carRigidbody.velocity -= carRigidbody.transform.forward * Time.deltaTime * 7;
+                            carRigidbody.velocity -= carRigidbody.transform.forward * Time.deltaTime * 12;
                         }
                         else
                         {

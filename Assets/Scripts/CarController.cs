@@ -42,11 +42,11 @@ public class CarController : MonoBehaviour
         bool redFlag;
         if (roadEndZ < 0)
         {
-            redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= 8 && transform.position.z >= 2);
+            redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= 8 && transform.position.z >= 5);
         }
         else
         {
-            redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= 2 && transform.position.z >= -4);
+            redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= -1 && transform.position.z >= -4);
         }
         
 
