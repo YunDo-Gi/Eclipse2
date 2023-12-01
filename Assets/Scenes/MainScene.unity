@@ -8038,7 +8038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: portName
-      value: COM7
+      value: COM8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9001,6 +9001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98edfb615a50dba49b41bdb87f6ba563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ready: 1
   serialController: {fileID: 1544318153}
 --- !u!4 &1768408222
 Transform:
