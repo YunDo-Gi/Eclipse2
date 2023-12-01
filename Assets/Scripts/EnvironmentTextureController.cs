@@ -95,4 +95,9 @@ public class EnvironmentTextureController : MonoBehaviour
             Debug.Log("On braille");
         }
     }
+
+    public void TrafficClick()
+    {
+        Debug.Log("TrafficClick");
+    }
 }
