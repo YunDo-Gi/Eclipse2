@@ -18,7 +18,7 @@ public class Controller : MonoBehaviour
         // Calculate velocity
         Vector3 currentPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
         velocity = Vector3.Distance(previousPosition, currentPosition) / Time.deltaTime;
-        Debug.Log("Velocity: " + velocity);
+        // Debug.Log("Velocity: " + velocity);
 
         previousPosition = currentPosition;
 
