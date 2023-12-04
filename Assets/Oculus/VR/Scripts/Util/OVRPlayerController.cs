@@ -173,6 +173,7 @@ public class OVRPlayerController : MonoBehaviour
     private bool ReadyToSnapTurn;
 
     private bool playerControllerEnabled = false;
+    public bool isGrounded;
 
     void Start()
     {
