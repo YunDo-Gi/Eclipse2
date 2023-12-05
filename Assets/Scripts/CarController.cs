@@ -28,7 +28,6 @@ public class CarController : MonoBehaviour
         audioSource.playOnAwake = false;
         // 캐릭터: 태그가 "person"인 게임오브젝트 
         character = GameObject.FindWithTag("person");
-        isPerson = false;
     }
 
     public void Initialize(float endZ)
