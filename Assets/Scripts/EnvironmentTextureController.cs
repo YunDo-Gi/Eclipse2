@@ -17,24 +17,38 @@ public class EnvironmentTextureController : MonoBehaviour
     {
         while (true)
         {
+            // 도로
             if (texture == "asphalt")
             {
                 Debug.Log("asphalt");
             }
+
+            // 검정 횡단보도
             else if (texture == "crosswalk")
             {
                 Debug.Log("crosswalk");
             }
+
+            // 흰색 횡단보도
+            else if (texture == "whitecrosswalk")
+            {
+                Debug.Log("whitecrosswalk");
+            }
+
+            // 인도
             else if (texture == "sidewalk")
             {
                 Debug.Log("sidewalk");
-            } else if (texture == "obstacle")
+            } 
+            
+            // 장애물
+            else if (texture == "obstacle")
             {
                 Debug.Log("obstacle");
-            } else if (texture == "whitecrosswalk")
-            {
-                Debug.Log("whitecrosswalk");
-            } else if (texture == "braille")
+            } 
+
+            // 점자블록
+            else if (texture == "braille")
             {
                 Debug.Log("braille");
             }

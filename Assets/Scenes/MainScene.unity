@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8407419, g: 0.883042, b: 0.84021926, a: 1}
+  m_IndirectSpecularColor: {r: 0.840037, g: 0.88221717, b: 0.839787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -346,6 +346,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &29963710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1983450597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &29963715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29963710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &30367385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1311832174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &30367390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30367385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &32625964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -357,6 +425,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -401,6 +473,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       insertIndex: -1
       addedObject: {fileID: 579422865}
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1099150496}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &32656016
 PrefabInstance:
@@ -464,6 +539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (57)
@@ -507,7 +586,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1751850148}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &42468640
 PrefabInstance:
@@ -517,6 +599,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (50)
@@ -560,7 +646,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1317646146}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!4 &51031666 stripped
 Transform:
@@ -740,6 +829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.400002
@@ -783,7 +876,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 517585424}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &54116425
 PrefabInstance:
@@ -842,6 +938,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &59103368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1620489999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &59103373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59103368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &59203485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (4)
@@ -1156,7 +1290,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 874244771}
   m_SourcePrefab: {fileID: 100100000, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
 --- !u!1001 &65817320
 PrefabInstance:
@@ -1877,6 +2014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -1920,7 +2061,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1740457083}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &81595672
 PrefabInstance:
@@ -1933,6 +2077,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1977,7 +2125,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1455929302}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &82210369
 GameObject:
@@ -3150,6 +3301,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &133074018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1757905315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &133074023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133074018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &136421460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3400,6 +3585,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &140740489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 523414448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &140740494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140740489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &159650385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3411,6 +3630,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -3451,7 +3674,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500548228}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &160568277
 PrefabInstance:
@@ -3519,6 +3745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -3558,7 +3788,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 771779463}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &170164762
 GameObject:
@@ -3605,6 +3838,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &170321390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 754587997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &170321395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170321390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &173959431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,6 +4086,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0c9730978f0d194c9b79ac6b6aa2c60, type: 3}
+--- !u!1 &181400251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 451080215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &181400256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181400251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &182633722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3830,6 +4131,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -3870,7 +4175,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903535215}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &188619540
 GameObject:
@@ -4314,6 +4622,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ad7e2cecb192d43a4a02f1b422beed, type: 3}
+--- !u!1 &236603891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 871973895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &236603896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236603891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &245754054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 1311824985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &245754059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245754054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &247683320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4363,6 +4739,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d55339d5a4e0b8f41a0448068bd26f4e, type: 3}
+--- !u!1 &249216644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1395516777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249216649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249216644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &250303412
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,6 +5380,40 @@ Transform:
   - {fileID: 720279150}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &298952772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 1708468631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &298952777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298952772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &302161171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,6 +5583,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (5)
@@ -5182,7 +5630,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 381937374}
   m_SourcePrefab: {fileID: 100100000, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
 --- !u!1 &308716892
 GameObject:
@@ -5345,6 +5796,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &309060287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 568644860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &309060292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309060287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &309889315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
@@ -5568,6 +6053,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &339069946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1012483275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &339069951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339069946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &342679699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5756760541019062379, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -6099,6 +6618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4001
@@ -6142,7 +6665,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1064148699}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &370978305
 PrefabInstance:
@@ -6155,6 +6681,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -6195,7 +6725,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735080612}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!4 &372801719 stripped
 Transform:
@@ -6279,6 +6812,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (53)
@@ -6322,8 +6859,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1566205606}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+--- !u!1 &381937369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+  m_PrefabInstance: {fileID: 303928353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381937374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381937369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &385755590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8261029581394574618, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -6386,6 +6960,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &390576157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 794898729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &390576162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390576157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &390728283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6443,6 +7051,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &392929766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1897782478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &392929771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392929766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &402222499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6606,6 +7248,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &413948610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2006182278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &413948615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413948610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &415610404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6617,6 +7293,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: ending_spot_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -6657,7 +7337,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269801789}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!4 &422777049 stripped
 Transform:
@@ -6812,6 +7495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 4 prefab (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
       value: 894
@@ -6851,8 +7538,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1204031544}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+--- !u!1 &446750113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1453481242655234, guid: 3e51558bab861cb4abd5698ff3cc1a4e, type: 3}
+  m_PrefabInstance: {fileID: 1479781218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &446750118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446750113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &446874880
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,6 +7907,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (47)
@@ -7226,7 +7954,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 181400256}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &452150923
 GameObject:
@@ -8143,6 +8874,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c469c07c5b45c454db32065c2f59b36b, type: 3}
+--- !u!1 &481094914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1810232584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &481094919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481094914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &487053095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1083424251522222, guid: abc98a3329f924b4680c86edde08968d, type: 3}
@@ -8350,6 +9115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -8389,7 +9158,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202539471}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &501456962
 GameObject:
@@ -8595,6 +9367,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f78f527e43206b408b73d96ccdbea2a, type: 3}
+--- !u!1 &517585419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 52301448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517585424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517585419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &522307617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9170188392194804134, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -8769,6 +9575,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (62)
@@ -8812,7 +9622,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 140740494}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &524390408
 PrefabInstance:
@@ -8822,6 +9635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (56)
@@ -8865,7 +9682,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 637786455}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &527347692
 PrefabInstance:
@@ -8875,6 +9695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (54)
@@ -8918,7 +9742,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876601101}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &527714848
 GameObject:
@@ -9388,6 +10215,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 855942894448707439, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &535892433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1670262389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &535892438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535892433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &536984191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9762,6 +10623,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5499027581128426996, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &558454780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1067371715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &558454785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558454780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &561891631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9967,6 +10862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -10006,7 +10905,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 309060292}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!4 &569747385 stripped
 Transform:
@@ -10251,6 +11153,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 419d31cd2358c274b93f3ed5fac4773f, type: 3}
+--- !u!1 &580137150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1009902286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &580137155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580137150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &581481204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10259,6 +11195,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (52)
@@ -10302,7 +11242,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2053655313}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &583399840
 GameObject:
@@ -10465,6 +11408,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &596630775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1833274572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &596630780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596630775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &613714692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 966549695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &613714697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613714692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &614766828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2551171532772753313, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -10801,16 +11812,118 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: effb1b31d7e11a54e9b051312c1a2ee4, type: 3}
+--- !u!1 &637786450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 524390408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &637786455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637786450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &639971687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471791693501205085, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &642320291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1632258929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &642320296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642320291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &657904312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2914394696089132779, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &659455024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1519336107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &659455029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659455024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &661696545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11372,6 +12485,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6cd0c657da915144bd367d385c0fc31, type: 3}
+--- !u!1 &711071661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1856641369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &711071666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711071661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &711812317
 GameObject:
   m_ObjectHideFlags: 0
@@ -12432,6 +13579,9 @@ PrefabInstance:
       addedObject: {fileID: 1477335016}
     - targetCorrespondingSourceObject: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: 0
+      addedObject: {fileID: 1197613973}
+    - targetCorrespondingSourceObject: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      insertIndex: 1
       addedObject: {fileID: 1444825863}
     - targetCorrespondingSourceObject: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
@@ -12460,6 +13610,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: start_street_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12504,7 +13658,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 732617422}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &728960128 stripped
 Transform:
@@ -12564,6 +13721,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 883cf758fdbaad44fbf987329131dbfb, type: 3}
+--- !u!1 &732617417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 728960127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &732617422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732617417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &735080607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 370978305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &735080612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735080607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &746589099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12629,6 +13854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -12668,7 +13897,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 170321395}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &758289597
 GameObject:
@@ -12908,6 +14140,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769481125}
   m_CullTransparentMesh: 1
+--- !u!1 &771779458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 168061112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &771779463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771779458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &775717739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13352,6 +14618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -13395,7 +14665,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 390576162}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &799034840
 GameObject:
@@ -14264,6 +15537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -14303,7 +15580,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2103858020}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &835667365
 PrefabInstance:
@@ -14316,6 +15596,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: Street 5 Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14360,7 +15644,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1668904571}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &837093382
 GameObject:
@@ -14750,6 +16037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -14789,7 +16080,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 236603896}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &872395797
 PrefabInstance:
@@ -14799,6 +16093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (59)
@@ -14842,8 +16140,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1981944390}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+--- !u!1 &874244766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+  m_PrefabInstance: {fileID: 65707134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &874244771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874244766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &878329530
 GameObject:
   m_ObjectHideFlags: 0
@@ -15296,6 +16631,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c311e85b96e43d4aaaf68e86c127195, type: 3}
+--- !u!1 &905088455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1929295708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &905088460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905088455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &909486067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15307,6 +16676,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -15347,7 +16720,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1403282364}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &910632571 stripped
 GameObject:
@@ -15717,6 +17093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 4 prefab (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
       value: 894
@@ -15756,7 +17136,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1267851283}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
 --- !u!1 &940699679
 GameObject:
@@ -16105,6 +17488,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1642800337198924, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
       propertyPath: m_Name
       value: Sideway 8 prefab (2)
@@ -16148,7 +17535,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1694649678}
   m_SourcePrefab: {fileID: 100100000, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
 --- !u!1001 &965953953
 PrefabInstance:
@@ -16161,6 +17551,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: Street 5 Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16205,7 +17599,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1798664988}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &966549695
 PrefabInstance:
@@ -16218,6 +17615,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: Street 5 Prefab (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16262,7 +17663,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 613714697}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &968458255
 PrefabInstance:
@@ -16272,6 +17676,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (51)
@@ -16315,7 +17723,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1106055976}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &970126840
 GameObject:
@@ -16635,6 +18046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -16678,7 +18093,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1784342621}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &985742302
 GameObject:
@@ -17161,6 +18579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -17204,7 +18626,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 580137155}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &1012483275
 PrefabInstance:
@@ -17217,6 +18642,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -17257,8 +18686,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 339069951}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+--- !u!1 &1013852451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 2146262877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013852456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013852451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1019633366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17270,6 +18736,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -17310,7 +18780,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1604912491}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &1021206085
 PrefabInstance:
@@ -18108,6 +19581,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1064148694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 364296576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064148699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064148694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1067371715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18119,6 +19626,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: Street 5 Prefab (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18163,7 +19674,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 558454785}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &1076228895
 GameObject:
@@ -18499,6 +20013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -18538,7 +20056,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1119252712}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &1080669763
 GameObject:
@@ -19015,6 +20536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -19054,13 +20579,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238045565}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!4 &1095972276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3900411753007862401, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1099150491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 32625964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1099150496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099150491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1103053672
 GameObject:
   m_ObjectHideFlags: 0
@@ -19444,6 +21006,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1106055971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 968458255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1106055976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106055971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1108104487
 GameObject:
   m_ObjectHideFlags: 0
@@ -19952,6 +21548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -19995,8 +21595,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1765767301}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1119252707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1080460972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1119252712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119252707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1121916828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20062,6 +21699,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: ending_spot
@@ -20105,7 +21746,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686521391}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!4 &1140014524 stripped
 Transform:
@@ -20269,6 +21913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -20312,7 +21960,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853023916}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &1159889721 stripped
 Transform:
@@ -20924,6 +22575,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 38.503, y: 270, z: 0}
+--- !u!4 &1197613973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+  m_PrefabInstance: {fileID: 1832177446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1202539466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 497289166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202539471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202539466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1202875566
 GameObject:
   m_ObjectHideFlags: 0
@@ -21142,6 +22832,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &1204031539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 435075702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1204031544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204031539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1214489004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
@@ -21155,6 +22879,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1849679972047364, guid: 8ca0a36b96d9a434b8fb9fc9a5d87b27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4629510190061420, guid: 8ca0a36b96d9a434b8fb9fc9a5d87b27, type: 3}
       propertyPath: m_RootOrder
       value: 184
@@ -21194,7 +22922,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1849679972047364, guid: 8ca0a36b96d9a434b8fb9fc9a5d87b27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794178040}
   m_SourcePrefab: {fileID: 100100000, guid: 8ca0a36b96d9a434b8fb9fc9a5d87b27, type: 3}
 --- !u!1001 &1230707368
 PrefabInstance:
@@ -21261,6 +22992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -21304,7 +23039,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1511267205}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &1233416645
 GameObject:
@@ -21467,6 +23205,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1238045560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1092539692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1238045565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238045560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1245365368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21526,6 +23298,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1840862357}
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1840862362}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &1251830286
 GameObject:
@@ -22274,6 +24049,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5224854311576672048, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1267851278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 939880658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1267851283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267851278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1269801784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 415610404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269801789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269801784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1270788170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6032087665338352233, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -22872,6 +24715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -22911,7 +24758,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541986976}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &1306177497
 PrefabInstance:
@@ -22970,6 +24820,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+--- !u!1 &1306799519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1339522324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306799524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306799519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1306799525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306799519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1001 &1311824985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22981,6 +24878,10 @@ PrefabInstance:
     - target: {fileID: 1590873232276242, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_Name
       value: Sideway 4 prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
@@ -23021,7 +24922,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 245754059}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
 --- !u!1001 &1311832174
 PrefabInstance:
@@ -23034,6 +24938,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23078,13 +24986,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 30367390}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!4 &1317423961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2494965570295767998, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1317646141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 42468640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1317646146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317646141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1318346323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23588,6 +25533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (43)
@@ -23631,7 +25580,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1306799524}
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1306799525}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &1345652445
 PrefabInstance:
@@ -24218,6 +26173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -24261,7 +26220,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1957406307}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &1375432725
 GameObject:
@@ -24481,6 +26443,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (44)
@@ -24524,7 +26490,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871357915}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &1384399532
 PrefabInstance:
@@ -24780,6 +26749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -24823,7 +26796,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 249216649}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &1398524070
 PrefabInstance:
@@ -24980,6 +26956,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
+--- !u!1 &1403282359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 909486067}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1403282364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403282359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1404336559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25071,18 +27081,31 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 799908642}
           m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
-          m_MethodName: 
+          m_MethodName: OnAsphalt
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1405106200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405106193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!4 &1406633151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1786838039762167453, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -25312,6 +27335,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1405106195}
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1405106200}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &1433740057
 GameObject:
@@ -26169,6 +28195,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1455929297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 81595672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455929302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455929297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1456057057
 GameObject:
   m_ObjectHideFlags: 0
@@ -26880,6 +28940,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1453481242655234, guid: 3e51558bab861cb4abd5698ff3cc1a4e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4188633736808668, guid: 3e51558bab861cb4abd5698ff3cc1a4e, type: 3}
       propertyPath: m_RootOrder
       value: 192
@@ -26919,7 +28983,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1453481242655234, guid: 3e51558bab861cb4abd5698ff3cc1a4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446750118}
   m_SourcePrefab: {fileID: 100100000, guid: 3e51558bab861cb4abd5698ff3cc1a4e, type: 3}
 --- !u!1001 &1480435114
 PrefabInstance:
@@ -26974,6 +29041,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: effb1b31d7e11a54e9b051312c1a2ee4, type: 3}
+--- !u!1 &1487564110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1596380964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1487564115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487564110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1487711754
 GameObject:
   m_ObjectHideFlags: 0
@@ -27296,6 +29397,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1500548223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 159650385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500548228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500548223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1502661291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27397,6 +29532,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1511267200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1233326298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1511267205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511267200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1513983024
 GameObject:
   m_ObjectHideFlags: 0
@@ -27571,6 +29740,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (61)
@@ -27614,7 +29787,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 659455029}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &1522669635
 GameObject:
@@ -28421,6 +30597,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1530634343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 2108206270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1530634348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530634343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1532267516
 GameObject:
   m_ObjectHideFlags: 0
@@ -28644,6 +30854,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
   m_PrefabInstance: {fileID: 717391789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1541986971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1305720567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1541986976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541986971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1558501828
 GameObject:
   m_ObjectHideFlags: 0
@@ -29076,6 +31320,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+--- !u!1 &1566205601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 381844826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1566205606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566205601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1569277980
 GameObject:
   m_ObjectHideFlags: 0
@@ -29296,6 +31574,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (60)
@@ -29339,87 +31621,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1487564115}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!4 &1600183308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5300722954794843003, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1601861283
-PrefabInstance:
+--- !u!1 &1604912486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 1019633366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1604912491
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1573730805894322, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_Name
-      value: Street 3 Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040797355963638, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1224574634684750, guid: 2224b63330275e5478ef024b2913f937, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2224b63330275e5478ef024b2913f937, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604912486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1608802667
 GameObject:
   m_ObjectHideFlags: 0
@@ -29634,6 +31879,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (49)
@@ -29677,7 +31926,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1685889200}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1001 &1618913028
 PrefabInstance:
@@ -29756,6 +32008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.400002
@@ -29799,7 +32055,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 59103373}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &1627651370
 PrefabInstance:
@@ -29911,6 +32170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4001
@@ -29954,7 +32217,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 642320296}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &1643797778 stripped
 Transform:
@@ -30258,6 +32524,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1658008901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2026805897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1658008906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658008901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1658356732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30529,6 +32829,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c469c07c5b45c454db32065c2f59b36b, type: 3}
+--- !u!1 &1668904566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 835667365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1668904571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668904566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1670262389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30540,6 +32874,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -30580,7 +32918,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 535892438}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &1671709300
 GameObject:
@@ -31106,6 +33447,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1685889195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1615532676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1685889200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685889195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1686521386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1129497139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1686521391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686521386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1688713324
 GameObject:
   m_ObjectHideFlags: 0
@@ -31589,6 +33998,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1694649673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1045525805849594, guid: 5617f09499355b14bb58fe8aeb052d7e, type: 3}
+  m_PrefabInstance: {fileID: 959647539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694649678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694649673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1695086384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31859,6 +34302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 4 prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
       value: 894
@@ -31898,7 +34345,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 298952777}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
 --- !u!1 &1716981230
 GameObject:
@@ -32163,6 +34613,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a21df4da585e0946a2b991447fabcc6, type: 3}
+--- !u!1 &1740457078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 81137634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1740457083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740457078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1749785907
 GameObject:
   m_ObjectHideFlags: 0
@@ -32461,6 +34945,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1751850143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 40046017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1751850148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751850143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1753096452
 GameObject:
   m_ObjectHideFlags: 0
@@ -32634,6 +35152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -32677,13 +35199,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 133074023}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &1759139779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
   m_PrefabInstance: {fileID: 728497533}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1765767296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1116541284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1765767301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765767296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1770875056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32745,6 +35304,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: effb1b31d7e11a54e9b051312c1a2ee4, type: 3}
+--- !u!1 &1784342616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 985589462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1784342621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784342616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1787177995
 GameObject:
   m_ObjectHideFlags: 0
@@ -33051,6 +35644,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790787513}
   m_CullTransparentMesh: 1
+--- !u!1 &1794178035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1849679972047364, guid: 8ca0a36b96d9a434b8fb9fc9a5d87b27, type: 3}
+  m_PrefabInstance: {fileID: 1230309017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1794178040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794178035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1798664983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 965953953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798664988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798664983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1806308937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33116,6 +35777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1341532629177192, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
       propertyPath: m_Name
       value: Sideway 10 prefab (45)
@@ -33159,7 +35824,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 481094919}
   m_SourcePrefab: {fileID: 100100000, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
 --- !u!1 &1814527501
 GameObject:
@@ -33496,6 +36164,79 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 910632573}
   m_SourcePrefab: {fileID: 100100000, guid: 45374165b7b045b498462bc2d3987a31, type: 3}
+--- !u!1001 &1832177446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 309889315}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_Name
+      value: stick
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
 --- !u!1001 &1833274572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33507,6 +36248,10 @@ PrefabInstance:
     - target: {fileID: 1467453752596212, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_Name
       value: Street 5 Prefab (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33551,7 +36296,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 596630780}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &1833363269
 GameObject:
@@ -33748,6 +36496,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1840862362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840862355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1849353033
 GameObject:
   m_ObjectHideFlags: 0
@@ -34070,6 +36831,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1853023911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1159395241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1853023916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853023911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1856641369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34081,6 +36876,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -34121,7 +36920,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 711071666}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1001 &1863660569
 PrefabInstance:
@@ -34337,6 +37139,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1871357910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 1382042893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871357915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871357910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &1876601096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 527347692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1876601101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876601096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1893142885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34464,6 +37334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
       value: 925
@@ -34503,7 +37377,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 392929771}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &1900120427 stripped
 GameObject:
@@ -34568,6 +37445,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6959520040846576151, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1903535210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 182633722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1903535215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903535210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1921465454
 GameObject:
   m_ObjectHideFlags: 0
@@ -34907,6 +37818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.400003
@@ -34950,8 +37865,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 905088460}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+--- !u!1 &1929441368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2128945523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1929441373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929441368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1935459133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35997,6 +38949,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 961034d3b46fa154eba55b491c8a7175, type: 3}
+--- !u!1 &1957406302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1374755964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1957406307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957406302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1957940978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36672,6 +39658,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1222191664058525956, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1981944385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 872395797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981944390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981944385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1983450597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36683,6 +39703,10 @@ PrefabInstance:
     - target: {fileID: 1676472481311632, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_Name
       value: Sideway 11 prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_RootOrder
@@ -36723,7 +39747,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 29963715}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!1 &1989608276
 GameObject:
@@ -36898,6 +39925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 4 prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
       value: 894
@@ -36937,7 +39968,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2100177600}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
 --- !u!1 &2001362025
 GameObject:
@@ -37439,6 +40473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: start_street_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4001
@@ -37482,7 +40520,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413948615}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &2006182279 stripped
 Transform:
@@ -37575,6 +40616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -37618,7 +40663,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658008906}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1 &2029025719
 GameObject:
@@ -37930,6 +40978,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5310941407420749463, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   m_PrefabInstance: {fileID: 1465769251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2053655308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317521755811510, guid: f48ca42bbf7370343a33a9e87b1d9fdb, type: 3}
+  m_PrefabInstance: {fileID: 581481204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2053655313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053655308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &2055079408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 708979806558035362, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -38190,6 +41272,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091258053}
   m_CullTransparentMesh: 1
+--- !u!1 &2100177595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+  m_PrefabInstance: {fileID: 1992643709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2100177600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100177595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &2103858015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+  m_PrefabInstance: {fileID: 833188625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2103858020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103858015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: Onsidewalk
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2108206270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38201,6 +41351,10 @@ PrefabInstance:
     - target: {fileID: 1590873232276242, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_Name
       value: Sideway 4 prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
       propertyPath: m_RootOrder
@@ -38241,7 +41395,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1597341986288192, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1530634348}
   m_SourcePrefab: {fileID: 100100000, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
 --- !u!1001 &2110169692
 PrefabInstance:
@@ -38585,6 +41742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street 5 Prefab (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.4
@@ -38628,7 +41789,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1929441373}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!1001 &2129214837
 PrefabInstance:
@@ -39400,6 +42564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sideway 11 prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.400003
@@ -39443,7 +42611,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1963878510974460, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1013852456}
   m_SourcePrefab: {fileID: 100100000, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
 --- !u!23 &761585810927198455
 MeshRenderer:
@@ -39611,10 +42782,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 501456964}
+  - {fileID: 799908643}
   - {fileID: 943644707}
   - {fileID: 728497533}
   - {fileID: 1465769251}
-  - {fileID: 1601861283}
   - {fileID: 1339522324}
   - {fileID: 1116541284}
   - {fileID: 1810232584}
@@ -39805,7 +42976,6 @@ SceneRoots:
   - {fileID: 1190733616}
   - {fileID: 1749785912}
   - {fileID: 711812321}
-  - {fileID: 799908643}
   - {fileID: 985742307}
   - {fileID: 1656682863}
   - {fileID: 75379474}
