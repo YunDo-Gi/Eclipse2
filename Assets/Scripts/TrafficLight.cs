@@ -6,7 +6,7 @@ public class TrafficLight : MonoBehaviour
 {
     public Material[] lightMaterials;
 
-    //각각의 신호등 지속시간
+    //?????? ?????? ????????
     public float greenDuration = 10f;
     public float redDuration = 7f;
     public float yellowDuration = 2f;
@@ -16,7 +16,7 @@ public class TrafficLight : MonoBehaviour
 
 
 
-    //현재 신호등 색(도로기준)
+    //???? ?????? ??(????????)
     public enum LightColor
     {
         Red,
@@ -24,7 +24,7 @@ public class TrafficLight : MonoBehaviour
         Green
     }
 
-    //시작값은 green으로 설정
+    //???????? green???? ????
     public LightColor currentColor = LightColor.Green;
     int isRed = 0, isYellow = 0, isGreen = 1;
 
@@ -36,7 +36,7 @@ public class TrafficLight : MonoBehaviour
 
     void SetMaterials()
     {
-        //currnetColor에 맞춰서 색 rendering
+        //currnetColor?? ?????? ?? rendering
         switch (currentColor)
         {
             case LightColor.Red:
@@ -65,7 +65,7 @@ public class TrafficLight : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        //적색 -> 초록 -> 황색 -> 적색으로 변화
+        //???? -> ???? -> ???? -> ???????? ????
         if (currentColor == LightColor.Red && timer >= redDuration)
         {
             currentColor = LightColor.Green;
