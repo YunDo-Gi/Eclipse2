@@ -5,21 +5,29 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    //µµ·Î ³¡ µµ´Ş ¿©ºÎ¸¦ checkÇÏ´Â ¹ô¼ö¿Í ÇÔ¼ö
+    // ë„ë¡œ ë ë„ë‹¬ ì—¬ë¶€ë¥¼ checkí•˜ëŠ” ë³€ìˆ˜ì™€ í•¨ìˆ˜
     public delegate void CarReachedEnd(GameObject car);
     public event CarReachedEnd OnCarReachedEnd;
 
     private float roadEndZ;
+    bool isPerson;
 
-    //½ÅÈ£µî°ú ¹°Ã¼ Ãæµ¹ ¹æÁö Ã³¸®¸¦ À§ÇÑ ÄÚµå
-    public float stopDistance = 4f; //¹°Ã¼¿ÍÀÇ °Å¸®ÀÇ ÀÓ°èÁ¡
+    // ì‹ í˜¸ë“±ê³¼ ë¬¼ì²´ ì¶©ëŒ ë°©ì§€ ì²˜ë¦¬ë¥¼ ìœ„í•œ ì½”ë“œ
+    public float stopDistance = 4f; // ë¬¼ì²´ì™€ì˜ ê±°ë¦¬ì˜ ì„ê³„ì 
 
     public bool canMove = true;
     private TrafficLight trafficLight;
+    private AudioSource audioSource;
+    private GameObject character;
 
     private void Start()
     {
         trafficLight = FindObjectOfType<TrafficLight>();
+        // ì˜¤ë””ì˜¤ ì†ŒìŠ¤ ê°€ì ¸ì˜¤ê¸°  
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        // ìºë¦­í„°: íƒœê·¸ê°€ "person"ì¸ ê²Œì„ì˜¤ë¸Œì íŠ¸ 
+        character = GameObject.FindWithTag("person");
     }
 
     public void Initialize(float endZ)
@@ -27,18 +35,21 @@ public class CarController : MonoBehaviour
         roadEndZ = endZ;
     }
 
+  
     void Update()
     {
-        // ÀÚµ¿Â÷°¡ µµ·Î ³¡¿¡ µµ´ŞÇÏ¸é ÀÌº¥Æ® È£Ãâ
-        // ÀÚµ¿Â÷´Â À§¿Í ¾Æ·¡ ¹æÇâ 2°¡Áö·Î Á¸Àç, roadEndZ À§Ä¡°¡ ´Ù¸£´Ï »óÈ²¿¡ ¸Â°Ô event È£Ãâ
+        isPerson = false;
+        
+        // ìë™ì°¨ê°€ ë„ë¡œ ëì— ë„ë‹¬í•˜ë©´ ì´ë²¤íŠ¸ í˜¸ì¶œ
+        // ìë™ì°¨ëŠ” ìœ„ì™€ ì•„ë˜ ë°©í–¥ 2ê°€ì§€ë¡œ ì¡´ì¬, roadEndZ ìœ„ì¹˜ê°€ ë‹¤ë¥´ë‹ˆ ìƒí™©ì— ë§ê²Œ event í˜¸ì¶œ
         if ((transform.position.z <= roadEndZ && roadEndZ < 0) || (transform.position.z >= roadEndZ && roadEndZ >= 0))
         {
             OnCarReachedEnd?.Invoke(gameObject);
         }
 
 
-        //»¡°£ºÒ·Î ÀÎÇØ ¸ØÃç¾ß ÇÏ´Â Á¶°Ç
-        //¿ø·¡´Â crosswalk¿¡ tag°°Àº °Å ´Ş¾Æ¼­ ray·Î °Å¸® ÃøÁ¤ÇØ¼­ ÀÎÁöÇÏ°Ô ÇÏ·Á°í Çß´Âµ¥, Àß ¾È µÅ¼­ ÀÏ´Ü Â÷¼±¸¶´Ù Æ¯Á¤ À§Ä¡¸¦ ¸ØÃã Á¶°ÇÀ¸·Î ¼³Á¤ÇÔ
+        // ë¹¨ê°„ë¶ˆë¡œ ì¸í•´ ë©ˆì¶°ì•¼ í•˜ëŠ” ì¡°ê±´
+        // ì›ë˜ëŠ” crosswalkì— tag ë‹¬ì•„ì„œ rayë¡œ ê±°ë¦¬ ì¸¡ì •í•´ì„œ ì¸ì§€í•˜ê²Œ í•˜ë ¤ê³  í–ˆëŠ”ë°, ì˜ ì•ˆ ë¼ì„œ ì¼ë‹¨ ì°¨ì„ ë§ˆë‹¤ íŠ¹ì • ìœ„ì¹˜ë¥¼ ë©ˆì¶¤ ì¡°ê±´ìœ¼ë¡œ ì„¤ì •í•¨
         bool redFlag;
         if (roadEndZ < 0)
         {
@@ -50,18 +61,31 @@ public class CarController : MonoBehaviour
         }
         
 
-        //ÀÚµ¿Â÷ ¿òÁ÷ÀÓ °¡´É ¿©ºÎ °Ë»ç
+        // ìë™ì°¨ ì›€ì§ì„ ê°€ëŠ¥ ì—¬ë¶€ ê²€ì‚¬
         if (canMove)
         {
-            //»¡°£ºÒ È¤Àº Ãæµ¹ ¹°Ã¼°¡ Á¸ÀçÇÏ¸é stop
+            // ë¹¨ê°„ë¶ˆ í˜¹ì€ ì¶©ëŒ ë¬¼ì²´ê°€ ì¡´ì¬í•˜ë©´ stop
             if (redFlag || IsNearObstacle())
             {
+                // ì¼ë‹¨ ì°¨ ë©ˆì¶¤ 
                 StopCar();
+
+                // ì‚¬ëŒê³¼ ê°€ê¹Œì´ ìˆìœ¼ë©´ ê²½ì  ì†Œë¦¬ on
+                if (IsNearObstacle())
+                {
+                    audioSource.playOnAwake = true;  
+                }
+            
+                // ì‹ í˜¸ë“± red duration ì–¼ë§ˆ ì•ˆ ë‚¨ìœ¼ë©´ ê²½ì  ì†Œë¦¬ on 
+                /*if (trafficLight.redDuration <= 3f)
+                {
+                    audioSource.playOnAwake = true;
+                }*/
             }
         }
         else
         {
-            //»¡°£ºÒµµ ¾Æ´Ï°í Ãæµ¹ÇÒ¸¸ÇÑ ¹°Ã¼µµ ¾øÀ¸¸é move
+            // ë¹¨ê°„ë¶ˆë„ ì•„ë‹ˆê³  ì¶©ëŒí• ë§Œí•œ ë¬¼ì²´ë„ ì—†ìœ¼ë©´ move ---> ???
             if (!(redFlag || IsNearObstacle()))
             {
                 MoveCar();
@@ -79,17 +103,22 @@ public class CarController : MonoBehaviour
         canMove = true;
     }
 
+
     bool IsNearObstacle()
     {
-        // ÀÚµ¿Â÷ÀÇ Àü¹æ¿¡ Ray¸¦ ½î¾Æ ¹°Ã¼¿ÍÀÇ Ãæµ¹À» °¨Áö
+        // ìë™ì°¨ì˜ ì „ë°©ì— Rayë¥¼ ì˜ì•„ ë¬¼ì²´ì™€ì˜ ì¶©ëŒì„ ê°ì§€ --> ì‚¬ëŒê³¼ì˜ ì¶©ëŒì„ ê°ì§€
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance))
         {
-            // Ãæµ¹Èú ¹°Ã¼°¡ ÀÖÀ¸¸é true ¹İÈ¯
-            return true;
+            // ì¥ì• ë¬¼ì´ ì‚¬ëŒì´ë©´ true ë°˜í™˜
+            if (hit.collider.CompareTag("person"))
+            {
+                isPerson = true;
+                return true;
+            }
         }
 
-        // Ãæµ¹ÇÒ ¹°Ã¼°¡ ¾øÀ¸¸é false ¹İÈ¯
+        // ì¶©ëŒí•  ë¬¼ì²´ê°€ ì—†ìœ¼ë©´ false ë°˜í™˜
         return false;
     }
 }
