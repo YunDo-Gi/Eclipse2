@@ -77,20 +77,6 @@ public class CarController : MonoBehaviour
                 // 사람과 가까이 있으면 경적 소리 on
                 if (IsNearObstacle())
                 {
-                   // 오큘러스 collider 추가 -> 태그 달아서 인식 
-                   audioSource.playOnAwake = true;
-
-                }
-            
-                // 신호등 red duration 얼마 안 남으면 경적 소리 on 
-                if (trafficLight.redDuration <= 3f)
-                {
-                    audioSource.playOnAwake = true;
-                }
-
-                // 장애물이 있을 때 
-                if (IsNearObstacle())
-                {
                     audioSource.playOnAwake = true;  
                 }
             
