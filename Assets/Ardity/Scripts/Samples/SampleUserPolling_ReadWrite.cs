@@ -8,14 +8,12 @@
 
 using UnityEngine;
 using System.Collections;
-using System.Runtime.InteropServices;
 
 /**
  * Sample for reading using polling by yourself, and writing too.
  */
 public class SampleUserPolling_ReadWrite : MonoBehaviour
 {
-
     public SerialController serialController;
 
     // Initialization
