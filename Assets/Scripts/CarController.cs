@@ -27,7 +27,7 @@ public class CarController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.playOnAwake = false;
         // 캐릭터: 태그가 "person"인 게임오브젝트 
-        character = GameObject.FindWithTag("person");
+        character = GameObject.FindWithTag("Player");
         isPerson = false;
     }
 
@@ -115,7 +115,7 @@ public class CarController : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance))
         {
             // 장애물이 사람이면 true 반환
-            if (hit.collider.CompareTag("person"))
+            if (hit.collider.CompareTag("Player"))
             {
                 isPerson = true;
                 return true;
