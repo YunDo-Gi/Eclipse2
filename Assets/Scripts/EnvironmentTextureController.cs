@@ -6,10 +6,14 @@ using UnityEngine;
 public class EnvironmentTextureController : MonoBehaviour
 {
     public String texture;
+    public int texint;
+    public int obs;
 
     // Start is called before the first frame update
     void Start()
     {
+        texint = 0;
+        obs = 0;
         StartCoroutine(UpdateCoroutine());
     }
 
@@ -19,23 +23,34 @@ public class EnvironmentTextureController : MonoBehaviour
         {
             if (texture == "asphalt")
             {
+                texint = 1;
+                obs = 0;
                 Debug.Log("asphalt");
             }
             else if (texture == "crosswalk")
             {
+                texint = 1;
+                obs = 0;
                 Debug.Log("crosswalk");
             }
             else if (texture == "sidewalk")
             {
+                texint = 0;
+                obs = 0;
                 Debug.Log("sidewalk");
             } else if (texture == "obstacle")
             {
+                obs = 1;
                 Debug.Log("obstacle");
             } else if (texture == "whitecrosswalk")
             {
+                texint = 2;
+                obs = 0;
                 Debug.Log("whitecrosswalk");
             } else if (texture == "braille")
             {
+                texint = 3;
+                obs = 0;
                 Debug.Log("braille");
             }
             yield return new WaitForEndOfFrame();
