@@ -10,6 +10,7 @@ public class CarController : MonoBehaviour
     public event CarReachedEnd OnCarReachedEnd;
 
     private float roadEndZ;
+    bool isPerson;
 
     // 신호등과 물체 충돌 방지 처리를 위한 코드
     public float stopDistance = 4f; // 물체와의 거리의 임계점
@@ -17,13 +18,17 @@ public class CarController : MonoBehaviour
     public bool canMove = true;
     private TrafficLight trafficLight;
     private AudioSource audioSource;
-    
+    private GameObject character;
+
     private void Start()
     {
         trafficLight = FindObjectOfType<TrafficLight>();
         // 오디오 소스 가져오기  
         audioSource = GetComponent<AudioSource>();
         audioSource.playOnAwake = false;
+        // 캐릭터: 태그가 "person"인 게임오브젝트 
+        character = GameObject.FindWithTag("person");
+        isPerson = false;
     }
 
     public void Initialize(float endZ)
@@ -34,9 +39,16 @@ public class CarController : MonoBehaviour
   
     void Update()
     {
+<<<<<<< Updated upstream
         // 자동차가 도로 끝에 도달하면 이벤트 호출
         // 자동차는 위와 아래 방향 2가지로 존재, roadEndZ 위치가 다르니 상황에 맞게 event 호출
         if ((transform.position.z <= roadEndZ && roadEndZ < 0) || (transform.position.z >= roadEndZ && roadEndZ >= 0))
+=======
+        isPerson = false;
+        // ???????? ???? ???? ???????? ?????? ????
+        // ???????? ???? ???? ???? 2?????? ????, roadEndZ ?????? ?????? ?????? ???? event ????
+        if ((transform.position.z <= roadEndZ && roadEndZ < 0) || (transform.position.z >= roadEndZ && roadEndZ >= 0))
+>>>>>>> Stashed changes
         {
             OnCarReachedEnd?.Invoke(gameObject);
         }
@@ -64,6 +76,7 @@ public class CarController : MonoBehaviour
                 // 일단 차 멈춤 
                 StopCar();
 
+<<<<<<< Updated upstream
                 // 사람과 가까이 있으면 경적 소리 on
                 if (IsNearObstacle())
                 {
@@ -78,6 +91,19 @@ public class CarController : MonoBehaviour
                 {
                     audioSource.playOnAwake = true;
                 }
+=======
+                // 장애물이 있을 때 
+                if (IsNearObstacle())
+                {
+                    audioSource.playOnAwake = true;  
+                }
+            
+                // 신호등 red duration 얼마 안 남으면 경적 소리 on 
+                /*if (trafficLight.redDuration <= 3f)
+                {
+                    audioSource.playOnAwake = true;
+                }*/
+>>>>>>> Stashed changes
 
             }
         }
@@ -101,14 +127,26 @@ public class CarController : MonoBehaviour
         canMove = true;
     }
 
+
     bool IsNearObstacle()
     {
         // 자동차의 전방에 Ray를 쏘아 물체와의 충돌을 감지 --> 사람과의 충돌을 감지
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance))
         {
+<<<<<<< Updated upstream
             // 충돌할 물체가 있으면 true 반환
             return true;
+=======
+            // 장애물이 사람이면
+            if (hit.collider.CompareTag("person"))
+            {
+                isPerson = true;
+                return true;
+            }
+            // ?????? ?????? ?????? true ????
+            
+>>>>>>> Stashed changes
         }
 
         // 충돌할 물체가 없으면 false 반환
