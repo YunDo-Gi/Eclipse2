@@ -78,7 +78,6 @@ public class CarController : MonoBehaviour
                 if (IsNearObstacle())
                 {
                    // 오큘러스 collider 추가 -> 태그 달아서 인식 
-                   
                    audioSource.playOnAwake = true;
 
                 }
