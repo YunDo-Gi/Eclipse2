@@ -64,6 +64,7 @@ public class CarController : MonoBehaviour
         // 자동차 움직임 가능 여부 검사
         if (canMove)
         {
+            
             // 빨간불 혹은 충돌 물체가 존재하면 stop
             if (redFlag || IsNearObstacle())
             {
@@ -74,6 +75,7 @@ public class CarController : MonoBehaviour
             if (IsNearObstacle("Player"))
             {
                 audioSourceCollision.Play();
+                StopCar();
             }
         }
         else
@@ -92,6 +94,7 @@ public class CarController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance) || Physics.Raycast(transform.position + new Vector3(0f, 1f, 0f), transform.forward, out hit, stopDistance))
         {
+            Debug.Log("Detected Object Tag: " + hit.collider.tag);
             //  태그가 제공되지 않았거나 태그가 일치하면 true 반환
             if (tag == null || hit.collider.CompareTag(tag))
             {
