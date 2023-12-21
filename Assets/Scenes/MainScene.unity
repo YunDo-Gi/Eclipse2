@@ -2105,8 +2105,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81137636}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &81137635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 81137634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &81137636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81137635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &81595672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6671,8 +6708,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364296578}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &364296577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 364296576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364296578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364296577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &370978305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11763,6 +11837,10 @@ PrefabInstance:
       value: Street 8 Prefab (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1695049543612290, guid: 45374165b7b045b498462bc2d3987a31, type: 3}
+      propertyPath: m_Name
+      value: street_crosswalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695049543612290, guid: 45374165b7b045b498462bc2d3987a31, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -13857,13 +13935,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 728960130}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &728960128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
   m_PrefabInstance: {fileID: 728960127}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &728960129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 728960127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &728960130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728960129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &731322377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14854,8 +14969,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 794898731}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &794898730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 794898729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &794898731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794898730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &799034840
 GameObject:
   m_ObjectHideFlags: 0
@@ -15858,8 +16010,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 835667367}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &835667366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 835667365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &835667367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835667366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &837093382
 GameObject:
   m_ObjectHideFlags: 0
@@ -17929,8 +18118,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 965953955}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &965953954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 965953953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &965953955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965953954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &966549695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17986,8 +18212,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 966549697}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &966549696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 966549695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &966549697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966549696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &968458255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18487,8 +18750,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 985589464}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &985589463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 985589462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &985589464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985589463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &985742302
 GameObject:
   m_ObjectHideFlags: 0
@@ -19013,8 +19313,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1009902288}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1009902287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1009902286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1009902288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009902287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1012483275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20087,8 +20424,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1067371717}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1067371716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1067371715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1067371717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067371716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1076228895
 GameObject:
   m_ObjectHideFlags: 0
@@ -21993,8 +22367,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1116541286}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1116541285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1116541284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1116541286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116541285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1121916828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22388,8 +22799,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1159395243}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1159395242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1159395241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1159395243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159395242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1159632826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04df0df41693dbe40a2c0434b1d69082, type: 3}
@@ -23422,8 +23870,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1233326300}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1233326299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1233326298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1233326300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233326299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1233416645
 GameObject:
   m_ObjectHideFlags: 0
@@ -26602,8 +27087,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1374755966}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1374755965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1374755964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1374755966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374755965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1375432725
 GameObject:
   m_ObjectHideFlags: 0
@@ -27242,8 +27764,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1395516779}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1395516778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1395516777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1395516779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395516778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1398524070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27497,13 +28056,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 799908642}
           m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
-          m_MethodName: 
+          m_MethodName: OnAsphalt
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -32719,8 +33278,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1632258931}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1632258930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1632258929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632258931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632258930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1643797778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 239150633993469761, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
@@ -35639,8 +36235,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1757905317}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1757905316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1757905315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1757905317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757905316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1759139779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
@@ -36526,6 +37159,10 @@ PrefabInstance:
       value: Street 8 Prefab (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1695049543612290, guid: 45374165b7b045b498462bc2d3987a31, type: 3}
+      propertyPath: m_Name
+      value: street_crosswalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695049543612290, guid: 45374165b7b045b498462bc2d3987a31, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -36632,8 +37269,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1833274574}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &1833274573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 1833274572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1833274574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833274573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1833363269
 GameObject:
   m_ObjectHideFlags: 0
@@ -40830,13 +41504,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2006182281}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
 --- !u!4 &2006182279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4341322971054776, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
   m_PrefabInstance: {fileID: 2006182278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2006182280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2006182278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2006182281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006182280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2007652826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40966,8 +41677,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026805899}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &2026805898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2026805897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026805899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026805898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2029025719
 GameObject:
   m_ObjectHideFlags: 0
@@ -42095,8 +42843,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2128945525}
   m_SourcePrefab: {fileID: 100100000, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+--- !u!1 &2128945524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936361318975402, guid: bb22ea4214c77784c96ecc3cb6bc0608, type: 3}
+  m_PrefabInstance: {fileID: 2128945523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2128945525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128945524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 799908642}
+          m_TargetAssemblyTypeName: EnvironmentTextureController, Assembly-CSharp
+          m_MethodName: OnAsphalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2129214837
 PrefabInstance:
   m_ObjectHideFlags: 0
