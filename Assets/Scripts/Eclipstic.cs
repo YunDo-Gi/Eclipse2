@@ -36,7 +36,7 @@ public class Eclipstic : MonoBehaviour
 
     IEnumerator waitSec()
     {
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSecondsRealtime(0.2f);
         //Debug.Log("start corutine");
         ready = true;
     }
@@ -99,7 +99,7 @@ public class Eclipstic : MonoBehaviour
             else if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_DISCONNECTED))
                 Debug.Log("Connection attempt failed or disconnection detected");
             else
-                //Debug.Log("arduino : " + message + "  || unity's texture : " + test.material + " , speed : " + test.speed);
+                Debug.Log("arduino : " + message + "  || unity's texture : " + test.material + " , speed : " + test.speed);
             while (serialController.ReadSerialMessage() != null) ;
             StartCoroutine(waitSec());
             //StartCoroutine((IEnumerator)WaitForIt());
