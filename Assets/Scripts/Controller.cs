@@ -28,10 +28,11 @@ public class Controller : MonoBehaviour
     void ButtonDownListener()
     {
         // X버튼을 누르면
-        if(OVRInput.GetDown(OVRInput.Button.Three))
+        if (OVRInput.GetDown(OVRInput.Button.Three))
         {
             // 여기에 음향신호기 넣으면 됨
             Debug.Log("X버튼을 눌렀습니다.");
-        } 
+        }
     }
 }
+
