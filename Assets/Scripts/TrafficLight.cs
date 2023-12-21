@@ -17,9 +17,12 @@ public class TrafficLight : MonoBehaviour
     private AudioSource audioRedLight1;
     private AudioSource audioGreenLight;
     private AudioSource audioRedLight2;
+    private AudioSource audioPedestrian;
+
+    public GameObject[] traffic;
 
     // 버튼이 눌렸을 때 true로 바꿔줌 
-    public bool isButton = false; 
+    public bool isButton = false;
 
     // 현재 신호등 색 (도로기준) 
     public enum LightColor
@@ -43,6 +46,7 @@ public class TrafficLight : MonoBehaviour
         audioRedLight1 = audioSources[0];
         audioGreenLight = audioSources[1];
         audioRedLight2 = audioSources[2];
+        audioPedestrian = audioSources[3];
     }
 
     void SetMaterials()
@@ -91,6 +95,7 @@ public class TrafficLight : MonoBehaviour
             {
                 isButton = false;
                 redPlay = false; greenPlay1 = false; greenPlay2 = false;
+                audioPedestrian.Stop();
             }
         }
         else if (currentColor == LightColor.Green && timer >= greenDuration)
@@ -127,12 +132,14 @@ public class TrafficLight : MonoBehaviour
             {
                 audioGreenLight.Stop();
                 audioRedLight1.Play();
+                audioPedestrian.Play();
                 greenPlay1 = true;
             }
             if (currentColor == LightColor.Red && timer > 10 && !greenPlay2)
             {
                 audioGreenLight.Stop();
-                audioRedLight1.Play();
+                audioRedLight2.Play();
+                audioPedestrian.Play();
                 greenPlay2 = true;
             }
         }
@@ -140,19 +147,21 @@ public class TrafficLight : MonoBehaviour
 
     void ButtonDownListener()
     {
-        //test code
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            isButton = true;
-        }
-
-        /*
+        
         // X버튼을 누르면
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
-            isButton = true;
-            // 여기에 음향신호기 넣으면 됨
-            Debug.Log("X버튼을 눌렀습니다.");
+            foreach (GameObject tar in traffic)
+            {
+                float distance = Vector3.Distance(transform.position, tar.transform.position);
+
+                if (distance <= 3f)
+                {
+                    isButton = true;
+                    break;
+                }
+            }
         }
-        */
+        
     }
+}
