@@ -36,7 +36,7 @@ public class Eclipstic : MonoBehaviour
 
     IEnumerator waitSec()
     {
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.1f);
         //Debug.Log("start corutine");
         ready = true;
     }
@@ -64,9 +64,10 @@ public class Eclipstic : MonoBehaviour
             //ready = false;
 
             test.material = textureController.texint;
-            test.speed = (int)(controller.velocity*20);
+            test.speed = (int)(controller.velocity*40);
+            test.speed = (test.speed > 100) ? 100 : test.speed;
             test.block = textureController.obs;
-            Debug.Log("speed : " + test.speed);
+            Debug.Log("speed : " + test.speed + " texture : " + test.material);
             //serialController.SendStruct(getMashalData());
             String tstr = Encoding.Default.GetString(getMashalData());
             //Debug.Log(tstr.Length);
@@ -99,7 +100,7 @@ public class Eclipstic : MonoBehaviour
                 Debug.Log("Connection attempt failed or disconnection detected");
             else
                 Debug.Log("Message arrived: " + message);
-            //StartCoroutine(waitSec());
+            StartCoroutine(waitSec());
             //StartCoroutine((IEnumerator)WaitForIt());
             return;
         }
