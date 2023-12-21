@@ -33,6 +33,15 @@ public class Controller : MonoBehaviour
         ButtonDownListener();
         StartGameListener();
         GameOverListener();
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            OFade.FadeOut();
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            OFade.FadeIn();
+        }
     }
 
     void ButtonDownListener()
