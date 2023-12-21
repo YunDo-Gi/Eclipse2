@@ -35,7 +35,7 @@ public class CarSpawner : MonoBehaviour
             {
                 SpawnCars();
                 spawnIndex = (spawnIndex + 1) % 2;
-            }
+            }   
             timer = 0f;
         }
 
@@ -104,6 +104,7 @@ public class CarSpawner : MonoBehaviour
                     // canMove 여부에 따라 속도 조절
                     if (!carController.canMove)
                     {
+                        /*
                         if (carRigidbody.velocity.magnitude > 0.5f)
                         {
                             carRigidbody.velocity -= carRigidbody.transform.forward * Time.deltaTime * 12;
@@ -112,6 +113,8 @@ public class CarSpawner : MonoBehaviour
                         {
                             carRigidbody.velocity = Vector3.zero;
                         }
+                        */
+                        carRigidbody.velocity = Vector3.zero;
                     }
                     else
                     {
