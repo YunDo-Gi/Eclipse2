@@ -25,33 +25,33 @@ public class EnvironmentTextureController : MonoBehaviour
             {
                 texint = 1;
                 obs = 0;
-                Debug.Log("asphalt");
+                //Debug.Log("asphalt");
             }
             else if (texture == "crosswalk")
             {
                 texint = 1;
                 obs = 0;
-                Debug.Log("crosswalk");
+                //Debug.Log("crosswalk");
             }
             else if (texture == "sidewalk")
             {
                 texint = 0;
                 obs = 0;
-                Debug.Log("sidewalk");
+                //Debug.Log("sidewalk");
             } else if (texture == "obstacle")
             {
                 obs = 1;
-                Debug.Log("obstacle");
+                //Debug.Log("obstacle");
             } else if (texture == "whitecrosswalk")
             {
                 texint = 2;
                 obs = 0;
-                Debug.Log("whitecrosswalk");
+                //Debug.Log("whitecrosswalk");
             } else if (texture == "braille")
             {
                 texint = 3;
                 obs = 0;
-                Debug.Log("braille");
+                //Debug.Log("braille");
             }
             yield return new WaitForEndOfFrame();
         }
