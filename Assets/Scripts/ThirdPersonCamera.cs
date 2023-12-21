@@ -9,7 +9,7 @@ public class ThirdPersonCamera : MonoBehaviour
     void Update()
     {
         // 플레이어의 위치를 따라가도록 설정
-        transform.position = player.position + new Vector3(0, 2, -5);
+        transform.position = player.position + new Vector3(-8, 5, -4);
         transform.LookAt(player.position);
     }
 }
