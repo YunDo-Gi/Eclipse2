@@ -17,14 +17,23 @@ public class CarController : MonoBehaviour
     public bool canMove = true;
     private TrafficLight trafficLight;
 
-    private AudioSource audioSource; // 오디오 소스 추가
+    private AudioSource audioSourceCollision; // 충돌 시 재생할 오디오 소스
+    private AudioSource audioSourceBackground; // 배경 음악용 오디오 소스
 
     private void Start()
     {
         trafficLight = FindObjectOfType<TrafficLight>();
 
-        // 오디오 소스 컴포넌트 초기화
-        audioSource = GetComponent<AudioSource>();
+        // AudioSource 컴포넌트들을 찾아 할
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        audioSourceCollision = audioSources[0];
+        audioSourceBackground = audioSources[1];
+    }
+
+    // 오브젝트가 활성화될 때마다 오디오 재생 
+    private void OnEnable()
+    {
+        audioSourceBackground.Play();
     }
 
     public void Initialize(float endZ)
@@ -51,14 +60,6 @@ public class CarController : MonoBehaviour
             redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= -1 && transform.position.z >= -6);
         }
 
-        // 디버깅: 함수 호출 전
-        Debug.Log("Checking for obstacles...");
-
-        bool isNearPlayer = IsNearObstacle("Player");
-
-        // 디버깅: 함수 호출 후
-        Debug.Log("Is near player: " + isNearPlayer);
-
 
         // 자동차 움직임 가능 여부 검사
         if (canMove)
@@ -72,7 +73,7 @@ public class CarController : MonoBehaviour
             // 사람과의 충돌 시 소리 재생 로직 추가
             if (IsNearObstacle("Player"))
             {
-                audioSource.Play();
+                audioSourceCollision.Play();
             }
         }
         else
