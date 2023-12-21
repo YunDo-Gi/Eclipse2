@@ -66,6 +66,7 @@ public class Eclipstic : MonoBehaviour
             test.material = textureController.texint;
             test.speed = (int)(controller.velocity*20);
             test.block = textureController.obs;
+            Debug.Log("speed : " + test.speed);
             //serialController.SendStruct(getMashalData());
             String tstr = Encoding.Default.GetString(getMashalData());
             //Debug.Log(tstr.Length);
@@ -98,7 +99,7 @@ public class Eclipstic : MonoBehaviour
                 Debug.Log("Connection attempt failed or disconnection detected");
             else
                 Debug.Log("Message arrived: " + message);
-            StartCoroutine(waitSec());
+            //StartCoroutine(waitSec());
             //StartCoroutine((IEnumerator)WaitForIt());
             return;
         }
