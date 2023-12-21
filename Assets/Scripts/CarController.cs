@@ -89,7 +89,7 @@ public class CarController : MonoBehaviour
     {
         // 자동차의 전방에 Ray를 쏘아 물체와의 충돌을 감지
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance) || Physics.Raycast(transform.position + new Vector3(0f, 1f, 0f), transform.forward, out hit, stopDistance))
         {
             //  태그가 제공되지 않았거나 태그가 일치하면 true 반환
             if (tag == null || hit.collider.CompareTag(tag))
