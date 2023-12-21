@@ -31,11 +31,13 @@ public class CarSpawner : MonoBehaviour
 
         if (timer >= spawnInterval)
         {
+            
             if (trafficLight.currentColor != TrafficLight.LightColor.Red)
             {
                 SpawnCars();
                 spawnIndex = (spawnIndex + 1) % 2;
             }   
+            
             timer = 0f;
         }
 
@@ -45,16 +47,48 @@ public class CarSpawner : MonoBehaviour
 
     void SpawnCars()
     {
-        if(spawnIndex == 0) {
-            SpawnCar(lanes[0].position + new Vector3(1f, 0f, 0f), roadEndZArray[0], Quaternion.Euler(0f, 180f, 0f));
-            SpawnCar(lanes[1].position + new Vector3(1f, 0f, 0f), roadEndZArray[1], Quaternion.Euler(0f, 0f, 0f));
+        if (spawnIndex == 0)
+        {
+            if (!IsCollisionDetected(lanes[0].position + new Vector3(1f, 0.1f, 5f), Quaternion.Euler(0f, 180f, 0f) * Vector3.forward))
+            {
+                SpawnCar(lanes[0].position + new Vector3(1f, 0.1f, 0f), roadEndZArray[0], Quaternion.Euler(0f, 180f, 0f));
+            }
+            if (!IsCollisionDetected(lanes[1].position + new Vector3(1f, 0.1f, -5f), Quaternion.Euler(0f, 0f, 0f) * Vector3.forward))
+            {
+                SpawnCar(lanes[1].position + new Vector3(1f, 0.1f, 0f), roadEndZArray[1], Quaternion.Euler(0f, 0f, 0f));
+            }
         }
         else
         {
-            SpawnCar(lanes[0].position + new Vector3(-1f, 0f, 0f), roadEndZArray[0], Quaternion.Euler(0f, 180f, 0f));
-            SpawnCar(lanes[1].position + new Vector3(-1f, 0f, 0f), roadEndZArray[1], Quaternion.Euler(0f, 0f, 0f));
+            if (!IsCollisionDetected(lanes[0].position + new Vector3(-1f, 0.1f, 5f), Quaternion.Euler(0f, 180f, 0f) * Vector3.forward))
+            {
+                SpawnCar(lanes[0].position + new Vector3(-1f, 0.1f, 0f), roadEndZArray[0], Quaternion.Euler(0f, 180f, 0f));
+            }
+            if (!IsCollisionDetected(lanes[1].position + new Vector3(-1f, 0.1f, -5f), Quaternion.Euler(0f, 0f, 0f) * Vector3.forward))
+            {
+                SpawnCar(lanes[1].position + new Vector3(-1f, 0.1f, 0f), roadEndZArray[1], Quaternion.Euler(0f, 0f, 0f));
+            }
+        }
+    }
+
+    bool IsCollisionDetected(Vector3 spawnPosition, Vector3 rotation)
+    {
+        // 레이를 쏴 충돌을 감지
+        Ray ray = new Ray(spawnPosition, rotation);
+        float rayDistance = 10f; // 레이의 최대 길이
+
+        // 충돌 감지된 물체의 정보를 저장하는 변수
+        RaycastHit hit;
+
+        // Physics.Raycast 함수가 true를 반환하면 충돌이 감지된 것임
+        if (Physics.Raycast(ray, out hit, rayDistance))
+        {
+            // 충돌된 물체의 태그가 "Car"인 경우에는 true 반환
+            return hit.collider.CompareTag("Car");
         }
 
+        // 충돌이 감지되지 않은 경우에는 false 반환
+        return false;
     }
 
     void SpawnCar(Vector3 position, float roadEndZ, Quaternion rotation)
@@ -104,7 +138,6 @@ public class CarSpawner : MonoBehaviour
                     // canMove 여부에 따라 속도 조절
                     if (!carController.canMove)
                     {
-                        /*
                         if (carRigidbody.velocity.magnitude > 0.5f)
                         {
                             carRigidbody.velocity -= carRigidbody.transform.forward * Time.deltaTime * 12;
@@ -113,8 +146,6 @@ public class CarSpawner : MonoBehaviour
                         {
                             carRigidbody.velocity = Vector3.zero;
                         }
-                        */
-                        carRigidbody.velocity = Vector3.zero;
                     }
                     else
                     {

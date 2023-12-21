@@ -41,9 +41,10 @@ public class CarController : MonoBehaviour
         roadEndZ = endZ;
     }
 
+
     void Update()
     {
-        // 자동차가 도로 끝에 도달하면 이벤트 호출
+        // 자동차가 도로 끝에 도달하면 삭제 이벤트 호출
         if ((transform.position.z <= roadEndZ && roadEndZ < 0) || (transform.position.z >= roadEndZ && roadEndZ >= 0))
         {
             OnCarReachedEnd?.Invoke(gameObject);
@@ -72,7 +73,7 @@ public class CarController : MonoBehaviour
             }
 
             // 사람과의 충돌 시 소리 재생 로직 추가
-            if (IsNearObstacle("Player"))
+            if (IsNearObstacle("Player")) //tag는 OVR player Controller에 존재
             {
                 audioSourceCollision.Play();
                 StopCar();
@@ -94,7 +95,6 @@ public class CarController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, stopDistance) || Physics.Raycast(transform.position + new Vector3(0f, 1f, 0f), transform.forward, out hit, stopDistance))
         {
-            Debug.Log("Detected Object Tag: " + hit.collider.tag);
             //  태그가 제공되지 않았거나 태그가 일치하면 true 반환
             if (tag == null || hit.collider.CompareTag(tag))
             {
