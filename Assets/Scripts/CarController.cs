@@ -51,6 +51,15 @@ public class CarController : MonoBehaviour
             redFlag = trafficLight.currentColor == TrafficLight.LightColor.Red && (transform.position.z <= 2 && transform.position.z >= -4);
         }
 
+        // 디버깅: 함수 호출 전
+        Debug.Log("Checking for obstacles...");
+
+        bool isNearPlayer = IsNearObstacle("Player");
+
+        // 디버깅: 함수 호출 후
+        Debug.Log("Is near player: " + isNearPlayer);
+
+
         // 자동차 움직임 가능 여부 검사
         if (canMove)
         {
