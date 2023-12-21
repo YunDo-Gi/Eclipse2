@@ -24,7 +24,7 @@ public class CarController : MonoBehaviour
     {
         trafficLight = FindObjectOfType<TrafficLight>();
 
-        // AudioSource 컴포넌트들을 찾아 할
+        // AudioSource 컴포넌트들을 찾아 할당 
         AudioSource[] audioSources = GetComponents<AudioSource>();
         audioSourceCollision = audioSources[0];
         audioSourceBackground = audioSources[1];
