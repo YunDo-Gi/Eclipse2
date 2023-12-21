@@ -47,7 +47,7 @@ public class TrafficLight : MonoBehaviour
 
     void SetMaterials()
     {
-        //currnetColor에 맞춰서  rendering
+        //currentColor에 맞춰서  rendering
         switch (currentColor)
         {
             case LightColor.Red:
@@ -99,6 +99,12 @@ public class TrafficLight : MonoBehaviour
             SetMaterials();
             timer = 0f;
         }
+        else if (currentColor == LightColor.Green && timer >= greenDuration)
+        {
+            currentColor = LightColor.Yellow;
+            SetMaterials();
+            timer = 0f;
+        }
         else if (currentColor == LightColor.Yellow && timer >= yellowDuration)
         {
             currentColor = LightColor.Red;
@@ -139,7 +145,7 @@ public class TrafficLight : MonoBehaviour
         {
             isButton = true;
         }
-        
+
         /*
         // X버튼을 누르면
         if (OVRInput.GetDown(OVRInput.Button.Three))
@@ -150,4 +156,3 @@ public class TrafficLight : MonoBehaviour
         }
         */
     }
-}
