@@ -61,13 +61,13 @@ public class Eclipstic : MonoBehaviour
     {
         if (ready)
         {
-            //ready = false;
+            ready = false;
 
             test.material = textureController.texint;
             test.speed = (int)(controller.velocity*40);
             test.speed = (test.speed > 100) ? 100 : test.speed;
             test.block = textureController.obs;
-            Debug.Log("speed : " + test.speed + " texture : " + test.material);
+            //Debug.Log(" texture : " + test.material + "speed : " + test.speed);
             //serialController.SendStruct(getMashalData());
             String tstr = Encoding.Default.GetString(getMashalData());
             //Debug.Log(tstr.Length);
@@ -88,7 +88,7 @@ public class Eclipstic : MonoBehaviour
             */
             if (message == null)
             {
-                //StartCoroutine((IEnumerator)WaitForIt());
+                StartCoroutine(waitSec());
                 return;
             }
 
@@ -99,7 +99,7 @@ public class Eclipstic : MonoBehaviour
             else if (ReferenceEquals(message, SerialController.SERIAL_DEVICE_DISCONNECTED))
                 Debug.Log("Connection attempt failed or disconnection detected");
             else
-                Debug.Log("Message arrived: " + message);
+                Debug.Log("arduino : " + message + "  || unity's texture : " + test.material + "speed : " + test.speed);
             StartCoroutine(waitSec());
             //StartCoroutine((IEnumerator)WaitForIt());
             return;
