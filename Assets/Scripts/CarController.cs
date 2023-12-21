@@ -70,7 +70,7 @@ public class CarController : MonoBehaviour
             }
 
             // 사람과의 충돌 시 소리 재생 로직 추가
-            else if (IsNearObstacle("Player"))
+            if (IsNearObstacle("Player"))
             {
                 audioSource.Play();
             }
