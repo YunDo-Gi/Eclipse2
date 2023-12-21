@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.84002125, g: 0.8822736, b: 0.8396468, a: 1}
+  m_IndirectSpecularColor: {r: 0.840037, g: 0.88221717, b: 0.839787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3517,6 +3517,7 @@ MonoBehaviour:
   greenDuration: 12
   redDuration: 20
   yellowDuration: 3
+  traffic: []
   isButton: 0
   currentColor: 2
 --- !u!114 &136421464
@@ -21626,6 +21627,7 @@ MonoBehaviour:
   greenDuration: 12
   redDuration: 20
   yellowDuration: 3
+  traffic: []
   isButton: 0
   currentColor: 2
 --- !u!114 &1091601509
@@ -25723,7 +25725,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCCB4\uD5D8 \uC2DC\uC791"
+  m_text: "\uCCB4\uD5D8\uC744 \uC2DC\uC791\uD558\uAE30 \uC704\uD574 \uAC80\uC9C0
+    \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e02f415844e4c39419b5dc87856613aa, type: 2}
   m_sharedMaterial: {fileID: 5349951891011046898, guid: e02f415844e4c39419b5dc87856613aa, type: 2}
@@ -33831,6 +33834,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 0
+  Canvas: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
+  CenterEyeObj: {fileID: 0}
 --- !u!4 &1628790993
 Transform:
   m_ObjectHideFlags: 0
@@ -37204,7 +37210,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790787513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37213,8 +37219,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -234}
-  m_SizeDelta: {x: 160, y: 45}
+  m_AnchoredPosition: {x: 28.1, y: -234}
+  m_SizeDelta: {x: 796.2, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790787515
 MonoBehaviour:
@@ -40656,7 +40662,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964598977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40665,8 +40671,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -234}
-  m_SizeDelta: {x: 160, y: 45}
+  m_AnchoredPosition: {x: 37.6, y: -234}
+  m_SizeDelta: {x: 544.8, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1964598979
 MonoBehaviour:
@@ -42821,8 +42827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 16.1, y: 0}
+  m_SizeDelta: {x: 452.1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091258055
 MonoBehaviour:
@@ -42844,7 +42850,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB2E4\uC2DC \uC2DC\uC791"
+  m_text: "\uB2E4\uC2DC \uC2DC\uC791\uD558\uAE30 \uC704\uD574 \uAC80\uC9C0 \uBC84\uD2BC\uC744
+    \uB20C\uB7EC\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e02f415844e4c39419b5dc87856613aa, type: 2}
   m_sharedMaterial: {fileID: 5349951891011046898, guid: e02f415844e4c39419b5dc87856613aa, type: 2}
