@@ -43,8 +43,6 @@ public class TrafficLight : MonoBehaviour
         audioRedLight1 = audioSources[0];
         audioGreenLight = audioSources[1];
         audioRedLight2 = audioSources[2];
-
-        isButton = true;
     }
 
     void SetMaterials()
@@ -76,40 +74,11 @@ public class TrafficLight : MonoBehaviour
 
     void Update()
     {
+        ButtonDownListener();
+
         timer += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            isButton = true;
-        }
-
-
-        if (isButton)
-        {
-            Debug.Log(redPlay);
-            Debug.Log(currentColor);
-            if (currentColor == LightColor.Green && !redPlay)
-            {
-                audioGreenLight.Play();
-                Debug.Log(currentColor);
-                Debug.Log(timer);
-                redPlay = true;
-            }
-            if (currentColor == LightColor.Red && timer <= 10 && !greenPlay1)
-            {
-                audioRedLight1.Play();
-                Debug.Log(currentColor);
-                Debug.Log(timer);
-                greenPlay1 = true;
-            }
-            if (currentColor == LightColor.Red && timer > 10 && !greenPlay2)
-            {
-                audioRedLight2.Play();
-                Debug.Log(currentColor);
-                Debug.Log(timer);
-                greenPlay2 = true;
-            }
-        }
+        SoundPlayer();
 
         // 자동차 기준 : 적색 -> 초록색 -> 황색 -> 적색으로 변화
         // 사람 기준: 녹색 -> 빨간색
@@ -138,8 +107,40 @@ public class TrafficLight : MonoBehaviour
         }
     }
 
+    void SoundPlayer()
+    {
+        Debug.Log(timer);
+        if (isButton)
+        {
+            if ((currentColor == LightColor.Green || currentColor == LightColor.Yellow) && !redPlay)
+            {
+                audioGreenLight.Play();
+                redPlay = true;
+            }
+            if (currentColor == LightColor.Red && timer <= 10 && !greenPlay1)
+            {
+                audioGreenLight.Stop();
+                audioRedLight1.Play();
+                greenPlay1 = true;
+            }
+            if (currentColor == LightColor.Red && timer > 10 && !greenPlay2)
+            {
+                audioGreenLight.Stop();
+                audioRedLight1.Play();
+                greenPlay2 = true;
+            }
+        }
+    }
+
     void ButtonDownListener()
     {
+        //test code
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            isButton = true;
+        }
+        
+        /*
         // X버튼을 누르면
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
@@ -147,5 +148,6 @@ public class TrafficLight : MonoBehaviour
             // 여기에 음향신호기 넣으면 됨
             Debug.Log("X버튼을 눌렀습니다.");
         }
+        */
     }
 }
