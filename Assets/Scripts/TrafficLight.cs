@@ -32,6 +32,7 @@ public class TrafficLight : MonoBehaviour
     // 시작값을 green으로 설정 
     public LightColor currentColor = LightColor.Green;
     int isRed = 0, isYellow = 0, isGreen = 1;
+    bool redPlay = false, greenPlay1 = false, greenPlay2 = false;
 
     void Start()
     {
@@ -77,24 +78,38 @@ public class TrafficLight : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (isButton)
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            if (currentColor == LightColor.Green)
-            {
-                audioGreenLight.Play();
-            }
-            if (currentColor == LightColor.Red && timer <= 10)
-            {
-                audioRedLight1.Play();
-            }
-            if (currentColor == LightColor.Red && timer > 10)
-            {
-                audioRedLight2.Play();
-            }
+            isButton = true;
         }
 
 
-
+        if (isButton)
+        {
+            Debug.Log(redPlay);
+            Debug.Log(currentColor);
+            if (currentColor == LightColor.Green && !redPlay)
+            {
+                audioGreenLight.Play();
+                Debug.Log(currentColor);
+                Debug.Log(timer);
+                redPlay = true;
+            }
+            if (currentColor == LightColor.Red && timer <= 10 && !greenPlay1)
+            {
+                audioRedLight1.Play();
+                Debug.Log(currentColor);
+                Debug.Log(timer);
+                greenPlay1 = true;
+            }
+            if (currentColor == LightColor.Red && timer > 10 && !greenPlay2)
+            {
+                audioRedLight2.Play();
+                Debug.Log(currentColor);
+                Debug.Log(timer);
+                greenPlay2 = true;
+            }
+        }
 
         // 자동차 기준 : 적색 -> 초록색 -> 황색 -> 적색으로 변화
         // 사람 기준: 녹색 -> 빨간색
@@ -106,15 +121,14 @@ public class TrafficLight : MonoBehaviour
             if (isButton)
             {
                 isButton = false;
+                redPlay = false; greenPlay1 = false; greenPlay2 = false;
             }
-            // audioRedLight.Play();
         }
         else if (currentColor == LightColor.Green && timer >= greenDuration)
         {
             currentColor = LightColor.Yellow;
             SetMaterials();
             timer = 0f;
-            // audioGreenLight.Play();
         }
         else if (currentColor == LightColor.Yellow && timer >= yellowDuration)
         {
