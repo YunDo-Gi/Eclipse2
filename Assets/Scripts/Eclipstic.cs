@@ -64,7 +64,7 @@ public class Eclipstic : MonoBehaviour
             //ready = false;
 
             test.material = textureController.texint;
-            test.speed = (int)controller.velocity;
+            test.speed = (int)(controller.velocity*20);
             test.block = textureController.obs;
             //serialController.SendStruct(getMashalData());
             String tstr = Encoding.Default.GetString(getMashalData());
