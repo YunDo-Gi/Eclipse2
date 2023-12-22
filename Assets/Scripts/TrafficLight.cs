@@ -20,6 +20,7 @@ public class TrafficLight : MonoBehaviour
     private AudioSource audioPedestrian;
 
     public GameObject[] traffic;
+    public Transform player;
 
     // 버튼이 눌렸을 때 true로 바꿔줌 
     public bool isButton = false;
@@ -147,24 +148,14 @@ public class TrafficLight : MonoBehaviour
         {
             foreach (GameObject tar in traffic)
             {
-                float distance = Vector3.Distance(transform.position, tar.transform.position);
+                float distance = Vector3.Distance(player.transform.position, tar.transform.position);
 
-                if (distance <= 3f)
+                if (distance <= 2f)
                 {
                     isButton = true;
                     break;
                 }
             }
         }
-        
-        /*
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            // Set isButton to true
-            isButton = true;
-            // Optionally, you can add additional actions or logging here
-        }
-        */
-
     }
 }
