@@ -3684,6 +3684,7 @@ MonoBehaviour:
   traffic:
   - {fileID: 136421461}
   - {fileID: 1091601506}
+  player: {fileID: 1214489004}
   isButton: 0
   currentColor: 2
 --- !u!114 &136421464
@@ -14787,6 +14788,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2066057237}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2066057242}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 215776022}
@@ -22396,6 +22400,7 @@ MonoBehaviour:
   traffic:
   - {fileID: 1091601506}
   - {fileID: 136421461}
+  player: {fileID: 1214489004}
   isButton: 0
   currentColor: 2
 --- !u!114 &1091601509
@@ -22499,7 +22504,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22595,7 +22600,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22691,7 +22696,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22787,7 +22792,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -24858,11 +24863,11 @@ GameObject:
   - component: {fileID: 1190733614}
   m_Layer: 0
   m_Name: ThirdPersonCamera
-  m_TagString: Untagged
+  m_TagString: ThirdCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1190733614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44842,6 +44847,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 1749785907}
+--- !u!114 &2066057242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066057232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cdec0c4686da04696e6e13b9bd7eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2070261310
 PrefabInstance:
   m_ObjectHideFlags: 0
