@@ -120,7 +120,7 @@ public class TrafficLight : MonoBehaviour
 
     void SoundPlayer()
     {
-        Debug.Log(timer);
+        //Debug.Log(timer);
         if (isButton)
         {
             if ((currentColor == LightColor.Green || currentColor == LightColor.Yellow) && !redPlay)
