@@ -104,12 +104,6 @@ public class TrafficLight : MonoBehaviour
             SetMaterials();
             timer = 0f;
         }
-        else if (currentColor == LightColor.Green && timer >= greenDuration)
-        {
-            currentColor = LightColor.Yellow;
-            SetMaterials();
-            timer = 0f;
-        }
         else if (currentColor == LightColor.Yellow && timer >= yellowDuration)
         {
             currentColor = LightColor.Red;
@@ -147,7 +141,7 @@ public class TrafficLight : MonoBehaviour
 
     void ButtonDownListener()
     {
-        
+        /*
         // X버튼을 누르면
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
@@ -162,6 +156,14 @@ public class TrafficLight : MonoBehaviour
                 }
             }
         }
-        
+        */
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            // Set isButton to true
+            isButton = true;
+            // Optionally, you can add additional actions or logging here
+        }
+
     }
 }
